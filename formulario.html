@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<br>
+<center>
+    <form name= "form" action="reg.php" method="post">
+    <div class="row">
+        <div class="col">
+            <div class="mb-3" style="width:500px" >
+                <label for="exampleFormControlTextarea1" class="form-label">Introduzca su nombre</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="nombre" required></textarea>
+            </div>
+        </div>
+        <div class="col">
+            <div class="mb-3" style="width:600px";>
+                <label for="exampleFormControlTextarea1" class="form-label">Introduzca su apellido</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="apellido" required></textarea>
+                <small class style="color:aliceblue;">Unicamente hace falta el primero</small>
+        </div>
+    </div>
+    </div>
+    <div class="mb-3" style="width:300px;">
+        <label for="exampleFormControlTextarea1" class="form-label">Introduzca su numero telefónico</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" name="telefono" placeholder= "+34 XXX-XX-XX-XX" required></textarea>
+    </div>
+    <div class="mb-3" style="width:800px;">
+        <label for="exampleFormControlInput1" class="form-label">Introduzca su dirección de correo</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
+    </div>
+</center>
+<center><label for="exampleColorInput" class="form-label">Cual es su color favorito?</label>
+<input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" name="color" title="Choose your color"></center>>
+<center><input type="submit" value= 'Enviar!' class="btn btn-warning">
+</form>
+</a></center>
+
+
+
+
+{% endblock %}
